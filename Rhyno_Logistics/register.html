@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Create a Rhyno Logistics account to manage your bookings." />
+    <title>Rhyno Logistics | Create Account</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="register">
+    <div id="site-header"></div>
+    <main class="portal-page">
+      <div class="container">
+        <div class="portal-intro">
+          <p class="eyebrow orange"><span></span> CUSTOMER PORTAL</p>
+          <h1>Create your account.</h1>
+          <p>Register to manage your bookings and receive shipment updates.</p>
+        </div>
+        <section class="auth-grid auth-grid-single">
+          <form id="register-form" class="portal-card">
+            <h2>Register</h2>
+            <label>Full name<input id="register-name" required type="text" autocomplete="name" /></label>
+            <label>Email address<input id="register-email" required type="email" autocomplete="email" /></label>
+            <label>Phone number<input id="register-phone" required type="tel" autocomplete="tel" /></label>
+            <label>Password<input id="register-password" required minlength="10" type="password" autocomplete="new-password" /></label>
+            <label>Confirm password<input id="register-confirm-password" required minlength="10" type="password" autocomplete="new-password" /></label>
+            <button class="primary-button" type="submit">Create account</button>
+            <p class="portal-message" id="register-message" aria-live="polite"></p>
+            <p class="portal-account-link">Already registered? <a href="portal.html">Sign in</a></p>
+          </form>
+        </section>
+      </div>
+    </main>
+    <div id="site-footer"></div>
+    <script src="js/site-shell.js"></script>
+    <script src="js/register.js"></script>
+  </body>
+</html>

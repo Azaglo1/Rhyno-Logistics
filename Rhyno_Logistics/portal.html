@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Rhyno Logistics customer and administrator portal." />
+    <title>Rhyno Logistics | Account Portal</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="portal">
+    <div id="site-header"></div>
+    <main class="portal-page"><div class="container"><div class="portal-intro"><p class="eyebrow orange"><span></span> CUSTOMER PORTAL</p><h1>Manage every move in one place.</h1><p>Sign in to manage your bookings, or create an account to get started.</p></div>
+      <section class="auth-grid auth-grid-single" id="auth-section"><form id="login-form" class="portal-card"><h2>Sign in</h2><label>Email address<input id="login-email" required type="email" autocomplete="email" /></label><label>Password<input id="login-password" required type="password" autocomplete="current-password" /></label><button class="primary-button" type="submit">Log in</button><button id="show-password-reset" class="text-button portal-forgot" type="button">Forgot password?</button><p class="portal-message" id="login-message" aria-live="polite"></p><p class="portal-account-link">New to Rhyno? <a href="register.html">Create an account</a></p></form></section>
+      <section id="password-reset-request-panel" class="portal-card" hidden><h2>Reset your password</h2><p>We’ll send a one-time reset link if an active account matches your email.</p><form id="password-reset-request-form"><label>Email address<input id="reset-request-email" required type="email" /></label><button class="primary-button" type="submit">Send reset link</button><p class="portal-message" id="reset-request-message" aria-live="polite"></p></form></section>
+      <section id="password-reset-confirm-panel" class="portal-card" hidden><h2>Choose a new password</h2><form id="password-reset-confirm-form"><input id="reset-token" type="hidden" /><label>New password<input id="reset-new-password" required minlength="10" type="password" /></label><label>Confirm new password<input id="reset-confirm-password" required minlength="10" type="password" /></label><button class="primary-button" type="submit">Reset password</button><p class="portal-message" id="reset-confirm-message" aria-live="polite"></p></form></section>
+      <section id="customer-dashboard" hidden>
+        <div class="dashboard-heading"><div><p class="eyebrow orange"><span></span> MY DASHBOARD</p><h2 id="welcome-message">Welcome</h2></div><button id="refresh-bookings" class="dark-button" type="button">Refresh bookings</button></div>
+        <div class="dashboard-grid" id="booking-summary"></div>
+        <section class="portal-card"><div class="table-heading"><h2>Booking history</h2><input id="booking-search" type="search" placeholder="Search reference or category" /></div><div id="booking-history" class="booking-history" aria-live="polite"></div></section>
+        <section class="portal-card profile-section" id="profile-section">
+          <div class="profile-section-heading"><p class="eyebrow orange"><span></span> ACCOUNT</p><h2>Profile</h2><p>Manage your contact information and account password.</p></div>
+          <div class="portal-account-grid">
+            <section><h3>Personal information</h3><form id="profile-form"><label>Full name<input id="profile-name" required /></label><label>Email address<input id="profile-email" required type="email" /></label><label>Phone number<input id="profile-phone" required /></label><button class="primary-button" type="submit">Save profile</button><p class="portal-message" id="profile-message" aria-live="polite"></p></form></section>
+            <section><h3>Change password</h3><form id="password-form"><label>Current password<input id="current-password" required type="password" /></label><label>New password<input id="new-password" required minlength="10" type="password" /></label><button class="dark-button" type="submit">Change password</button><p class="portal-message" id="password-message" aria-live="polite"></p></form></section>
+          </div>
+        </section>
+        <section class="portal-card"><div class="table-heading"><h2>Notifications</h2><button id="refresh-notifications" class="dark-button" type="button">Refresh</button></div><div id="customer-notifications" aria-live="polite"></div></section>
+      </section>
+    </div></main><div id="site-footer"></div><script src="js/site-shell.js"></script><script src="js/portal.js"></script>
+  </body>
+</html>

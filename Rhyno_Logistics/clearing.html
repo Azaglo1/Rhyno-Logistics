@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Send your shipment and supporting documents to our customs team for review." />
+    <title>Rhyno Logistics | Customs Clearing</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="clearing">
+    <div id="site-header"></div>
+    <main>
+      <section class="page-hero"><div class="container"><p class="eyebrow"><span></span> RHYNO LOGISTICS</p><h1>Clear customs with clarity.</h1><p>Send your shipment and supporting documents to our customs team for review.</p></div></section>
+      <section class="clearing-booking section" id="clearing">
+        <div class="container">
+          <div class="booking-access-notice" id="booking-access-notice" hidden role="status"><p id="booking-access-message">Create an account or sign in before submitting a booking request.</p><a href="portal.html#auth-section">Create account or sign in <span aria-hidden="true">→</span></a></div>
+          <div class="section-heading"><div><p class="eyebrow orange"><span></span> CLEARING &amp; FORWARDING</p><h2>Clear customs with clarity.</h2></div><p>Send your shipment and documentation details to our customs team for an efficient clearance review.</p></div>
+          <form class="clearing-form" id="clearing-form" data-account-required>
+            <fieldset><legend>Customer and shipment route</legend><div class="clearing-fields"><label>Customer's full name<input id="clearing-name" required type="text" placeholder="Full name" /></label><label>Company name <small>(optional)</small><input id="clearing-company" type="text" placeholder="Company name" /></label><label>Email address<input id="clearing-email" required type="email" placeholder="you@example.com" /></label><label>Phone number<input id="clearing-phone" required type="tel" placeholder="+233 00 000 0000" /></label><label>Direction<select id="clearing-direction"><option>Import</option><option>Export</option></select></label><label>Country of origin<select id="clearing-origin" required data-country-select data-placeholder="Select country of origin"><option value="">Loading countries…</option></select></label><label>Destination country<select id="clearing-destination" required data-country-select data-placeholder="Select destination country"><option value="">Loading countries…</option></select></label><label>Port of entry<input id="clearing-port" required type="text" placeholder="Port or airport" /></label></div></fieldset>
+            <fieldset><legend>Goods and shipping details</legend><div class="clearing-fields"><label class="clear-wide">Shipment description<textarea id="clearing-description" required placeholder="Describe the goods and shipment"></textarea></label><label>Goods category<select id="clearing-category"><option>General merchandise</option><option>Machinery and equipment</option><option>Consumer goods</option><option>Electronics</option><option>Food and agriculture</option><option>Other</option></select></label><label>Estimated shipment value<input id="clearing-value" required type="text" placeholder="e.g. USD 12,000" /></label><label>Shipment weight (kg)<input id="clearing-weight" required min="0.1" step="0.1" type="number" placeholder="0.0" /></label><label>Shipping method<select id="clearing-method"><option>Sea freight</option><option>Air freight</option><option>Road freight</option><option>Multimodal</option></select></label><label class="clear-wide">Additional instructions<textarea id="clearing-instructions" placeholder="Add special handling, deadline, or customs notes"></textarea></label></div></fieldset>
+            <fieldset><legend>Supporting documents</legend><p class="upload-note">PDF, JPG, or PNG files up to 10 MB each are uploaded to secure server-side storage. Maximum combined request size is 25 MB.</p><div class="document-fields"><label>Commercial invoice<input id="commercial-invoice" required type="file" accept=".pdf,.jpg,.jpeg,.png" /></label><label>Packing list<input id="packing-list" required type="file" accept=".pdf,.jpg,.jpeg,.png" /></label><label>Relevant shipping documents<input id="shipping-documents" required type="file" accept=".pdf,.jpg,.jpeg,.png" multiple /></label></div></fieldset>
+            <button class="primary-button" type="submit" disabled>Submit Clearing Request <span aria-hidden="true">→</span></button>
+          </form>
+          <section class="clearing-confirmation" id="clearing-confirmation" hidden aria-live="polite"></section>
+          <section class="clearing-status" aria-labelledby="status-title"><div><p class="eyebrow orange"><span></span> REQUEST STATUS</p><h3 id="status-title">Follow your clearing request.</h3><p>Each request moves through our documented clearance process.</p></div><div class="status-steps"><span class="active">Pending</span><span>Documents Received</span><span>Under Review</span><span>Processing</span><span>Cleared</span><span>Completed</span></div><form id="clearing-status-form"><label>Request reference<input id="clearing-reference-input" required type="text" placeholder="e.g. RHY-CLR-AB12CD34" /></label><label>Email used for request<input id="clearing-email-input" required type="email" placeholder="you@example.com" /></label><button class="dark-button" type="submit">Check Status</button></form><p id="clearing-status-result" aria-live="polite"></p></section>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="js/site-shell.js"></script>
+    <script src="js/location-options.js"></script>
+    <script src="js/booking-access.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

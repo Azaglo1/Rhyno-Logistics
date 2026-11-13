@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Request a tailored freight quotation for your route, cargo, and timeline." />
+    <title>Rhyno Logistics | Cargo & Freight</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="freight">
+    <div id="site-header"></div>
+    <main>
+      <section class="page-hero"><div class="container"><p class="eyebrow"><span></span> RHYNO LOGISTICS</p><h1>Move cargo with confidence.</h1><p>Request a tailored freight quotation for your route, cargo, and timeline.</p></div></section>
+      <section class="freight-booking section" id="freight"><div class="container"><div class="section-heading"><div><p class="eyebrow orange"><span></span> CARGO &amp; FREIGHT</p><h2>Move cargo with confidence.</h2></div><p>Request a tailored freight quotation. Prices are confirmed by the logistics team; no estimated charges are shown.</p></div><form class="freight-form" id="freight-form"><fieldset><legend>Customer and cargo details</legend><div class="freight-fields"><label>Customer name<input id="freight-name" required type="text" placeholder="Full name" /></label><label>Company name<input id="freight-company" type="text" placeholder="Company name" /></label><label>Email address<input id="freight-email" required type="email" placeholder="you@example.com" /></label><label>Phone number<input id="freight-phone" required type="tel" placeholder="+233 00 000 0000" /></label><label>Origin city<input id="freight-origin" required type="text" placeholder="City or area" /></label><label>Origin country<select id="freight-origin-country" required data-country-select data-placeholder="Select origin country"><option value="">Loading countries…</option></select></label><label>Destination city<input id="freight-destination" required type="text" placeholder="City or area" /></label><label>Destination country<select id="freight-destination-country" required data-country-select data-placeholder="Select destination country"><option value="">Loading countries…</option></select></label><label>Cargo type<select id="freight-type"><option>General cargo</option><option>Machinery</option><option>Perishable goods</option><option>Dangerous goods</option><option>Oversized cargo</option></select></label><label>Cargo weight (kg)<input id="freight-weight" required min="0.1" step="0.1" type="number" placeholder="0.0" /></label><label>Cargo dimensions (cm)<input id="freight-dimensions" required type="text" placeholder="L × W × H" /></label><label>Cargo quantity<input id="freight-quantity" required min="1" value="1" type="number" /></label><label>Shipping method<select id="freight-method"><option>Air freight</option><option>Sea freight</option><option>Road freight</option></select></label><label>Preferred shipping date<input id="freight-date" required type="date" /></label><label class="freight-wide">Special handling requirements<textarea id="freight-handling" placeholder="Temperature control, fragile handling, hazardous certification, etc."></textarea></label><label class="freight-wide">Additional instructions<textarea id="freight-instructions" placeholder="Add pickup requirements, timelines, or other notes"></textarea></div></fieldset><button class="primary-button" type="submit">Submit Quotation Request <span aria-hidden="true">→</span></button></form><section class="freight-summary" id="freight-summary" hidden aria-live="polite"></section><section class="quotation-status"><div><p class="eyebrow orange"><span></span> QUOTATION STATUS</p><h3>Track your quotation request.</h3><p>Enter the email used on the request. An approved quote and its payment terms are confirmed by the team.</p></div><form id="quotation-status-form"><label>Quotation reference<input id="quotation-reference-input" required type="text" placeholder="e.g. RHY-FRT-AB12CD34" /></label><label>Email used for request<input id="freight-email-input" required type="email" placeholder="you@example.com" /></label><button class="dark-button" type="submit">Check Status</button></form><p id="quotation-status-result" aria-live="polite"></p></section></div></section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="js/site-shell.js"></script>
+    <script src="js/location-options.js"></script>
+    <script src="js/booking-access.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

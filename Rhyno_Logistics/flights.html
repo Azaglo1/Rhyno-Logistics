@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Compare travel options and share your passenger details to request a booking." />
+    <title>Rhyno Logistics | Flight Bookings</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="flights">
+    <div id="site-header"></div>
+    <main>
+      <section class="page-hero"><div class="container"><p class="eyebrow"><span></span> RHYNO LOGISTICS</p><h1>Find your next flight.</h1><p>Compare travel options and share your passenger details to request a booking.</p></div></section>
+      <section class="flight-booking section" id="booking">
+        <div class="container">
+          <div class="booking-access-notice" id="booking-access-notice" hidden role="status"><p id="booking-access-message">Create an account or sign in before submitting a booking request.</p><a href="portal.html#auth-section">Create account or sign in <span aria-hidden="true">→</span></a></div>
+          <div class="section-heading"><div><p class="eyebrow orange"><span></span> FLIGHT BOOKINGS</p><h2>Find your next flight.</h2></div><p>Search flight offers and submit a booking request for our team to verify.</p></div>
+          <form class="flight-search" id="flight-search-form">
+            <fieldset class="trip-type"><legend>Trip type</legend><label><input type="radio" name="trip-type" value="round-trip" checked /> Round trip</label><label><input type="radio" name="trip-type" value="one-way" /> One way</label></fieldset>
+            <label>Departure country<select id="flight-origin-country" required data-country-select data-airport-country data-placeholder="Choose departure country" data-default-country="GH"><option value="">Loading countries…</option></select></label>
+            <label>Departure airport<select id="flight-origin" required data-airport-select data-country-select="flight-origin-country" data-default-airport="ACC"><option value="">Loading airports…</option></select></label>
+            <label>Destination country<select id="flight-destination-country" required data-country-select data-airport-country data-placeholder="Choose destination country" data-default-country="GB"><option value="">Loading countries…</option></select></label>
+            <label>Destination airport<select id="flight-destination" required data-airport-select data-country-select="flight-destination-country" data-default-airport="LHR"><option value="">Loading airports…</option></select></label>
+            <label>Departure date<input id="flight-departure" required type="date" /></label>
+            <label class="return-date">Return date<input id="flight-return" type="date" /></label>
+            <label>Passengers<select id="flight-passengers"><option value="1">1 passenger</option><option value="2">2 passengers</option><option value="3">3 passengers</option><option value="4">4 passengers</option><option value="5">5 passengers</option><option value="6">6 passengers</option><option value="7">7 passengers</option><option value="8">8 passengers</option><option value="9">9 passengers</option></select></label>
+            <label>Travel class<select id="flight-class"><option>Economy</option><option>Business</option><option>First Class</option></select></label>
+            <button class="primary-button" type="submit">Search Flights <span aria-hidden="true">→</span></button>
+          </form>
+          <div class="flight-results" id="flight-results" aria-live="polite"></div>
+          <section class="passenger-panel" id="passenger-panel" hidden>
+            <div><p class="eyebrow orange"><span></span> PASSENGER INFORMATION</p><h3>Request a booking</h3><p>Enter passenger details to save a booking request. Demo requests are test records only; they do not contact an airline or reserve a ticket.</p></div>
+            <form id="passenger-form" class="passenger-form" data-account-required>
+              <label>Full name<input id="passenger-name" required type="text" placeholder="As shown on passport" /></label><label>Email address<input id="passenger-email" required type="email" placeholder="you@example.com" /></label><label>Phone number<input id="passenger-phone" required type="tel" placeholder="+233 00 000 0000" /></label><label>Nationality<select id="passenger-nationality" required data-country-select data-country-value="name" data-placeholder="Select nationality"><option value="">Loading countries…</option></select></label><label class="passenger-notes">Passenger details<textarea id="passenger-details" placeholder="Passport requirements, dietary needs, or other notes"></textarea></label>
+              <aside class="booking-summary"><small>BOOKING SUMMARY</small><strong id="summary-route">Select a flight to continue</strong><span id="summary-flight">—</span><div><b id="summary-price">$0</b><span id="summary-travelers">1 traveller</span></div></aside>
+              <button class="primary-button" type="submit" disabled>Submit Booking Request <span aria-hidden="true">→</span></button>
+            </form>
+          </section>
+          <section class="booking-confirmation" id="booking-confirmation" hidden aria-live="polite"></section>
+          <section class="booking-lookup"><div><p class="eyebrow orange"><span></span> MY BOOKINGS</p><h3>View a booking</h3><p>Enter your Rhyno booking reference and email to retrieve the database record.</p></div><form id="booking-lookup-form"><label>Booking reference<input id="booking-reference-input" required type="text" placeholder="e.g. RHY-FLT-AB12CD34" /></label><label>Email used for request<input id="booking-email-input" required type="email" placeholder="you@example.com" /></label><button class="dark-button" type="submit">View Booking</button></form><div id="booking-lookup-result" aria-live="polite"></div></section>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="js/site-shell.js"></script>
+    <script src="js/location-options.js"></script>
+    <script src="js/booking-access.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

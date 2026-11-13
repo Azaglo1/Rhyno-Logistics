@@ -1,0 +1,36 @@
+<svg width="720" height="520" viewBox="0 0 720 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0D2543"/>
+      <stop offset="100%" stop-color="#102B4C"/>
+    </linearGradient>
+    <linearGradient id="planeGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FFB26B"/>
+      <stop offset="100%" stop-color="#FF6500"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="520" rx="36" fill="url(#bgGrad)"/>
+  <circle cx="604" cy="134" r="108" fill="#FF6500" fill-opacity="0.18"/>
+  <path d="M88 364C170 312 218 260 306 258C395 256 468 330 540 338C594 344 622 324 656 290" stroke="#E0E7FF" stroke-opacity="0.38" stroke-width="22" stroke-linecap="round" stroke-dasharray="2 18"/>
+  <path d="M204 188L280 250L322 226L390 176L448 188L522 157" stroke="#7DD3FC" stroke-opacity="0.7" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(170 120)">
+    <path d="M264 90L370 22L448 58L402 130L264 90Z" fill="url(#planeGrad)" opacity="0.95"/>
+    <path d="M72 132L198 92L290 160L144 170L72 132Z" fill="#F8FAFC" fill-opacity="0.92"/>
+    <path d="M240 106L162 184L120 138L240 106Z" fill="#E2E8F0" fill-opacity="0.9"/>
+    <path d="M120 138L72 160L30 128L72 96L120 138Z" fill="#C7D2FE"/>
+    <circle cx="172" cy="132" r="18" fill="#F8FAFC" fill-opacity="0.85"/>
+    <circle cx="172" cy="132" r="8" fill="#0D2543"/>
+  </g>
+  <g transform="translate(82 284)">
+    <rect x="0" y="72" width="168" height="92" rx="18" fill="#F8FAFC"/>
+    <rect x="16" y="32" width="136" height="58" rx="12" fill="#DDE7F5"/>
+    <path d="M12 110H156" stroke="#0D2543" stroke-width="8" stroke-linecap="round"/>
+    <path d="M56 24L93 0L124 24" stroke="#FF6500" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  <g transform="translate(510 256)">
+    <rect x="0" y="0" width="126" height="126" rx="24" fill="#F8FAFC"/>
+    <circle cx="63" cy="60" r="32" fill="#DBEAFE"/>
+    <path d="M40 60H86" stroke="#0D2543" stroke-width="8" stroke-linecap="round"/>
+    <path d="M63 37V83" stroke="#0D2543" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

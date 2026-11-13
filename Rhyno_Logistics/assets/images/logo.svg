@@ -1,0 +1,19 @@
+<svg width="320" height="120" viewBox="0 0 320 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#FF8A3D"/>
+      <stop offset="100%" stop-color="#FF6500"/>
+    </linearGradient>
+  </defs>
+  <rect x="12" y="10" width="88" height="88" rx="22" fill="url(#shield)"/>
+  <path d="M26 58V43.5C26 39.91 28.91 37 32.5 37H56.5C60.09 37 63 39.91 63 43.5V58C63 68.7 53.8 77.9 43.1 79.6L42.6 79.7C39.87 80.2 37.13 80.2 34.4 79.7L33.9 79.6C23.2 77.9 14 68.7 14 58V43.5C14 39.91 16.91 37 20.5 37H31" fill="none" stroke="#FFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M28 58L39.8 49.5C41.6 48 44.4 48 46.2 49.5L57 58" stroke="#FFF" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M55 65H40.5C38.57 65 37 63.43 37 61.5C37 59.57 38.57 58 40.5 58H55C56.93 58 58.5 59.57 58.5 61.5C58.5 63.43 56.93 65 55 65Z" fill="#FFF" fill-opacity="0.9"/>
+  <path d="M77 36C71.5 36 67 40.5 67 46V60C67 65.5 71.5 70 77 70H88V36H77Z" fill="#0B192C" opacity="0.18"/>
+  <circle cx="58" cy="62" r="5.5" fill="#0B192C"/>
+  <path d="M47 48C51.75 43.5 62 44 65.5 48C58.5 50.5 54 51.5 47 48Z" fill="#FFF" fill-opacity="0.76"/>
+  <g>
+    <text x="118" y="54" fill="#0B192C" font-family="Arial, Helvetica, sans-serif" font-size="31" font-weight="800" letter-spacing="2">RHYNO</text>
+    <text x="120" y="80" fill="#FF6500" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="700" letter-spacing="6">LOGISTICS</text>
+  </g>
+</svg>

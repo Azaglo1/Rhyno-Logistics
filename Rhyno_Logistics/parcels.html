@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Arrange collection and delivery with a clear request tailored to your parcel." />
+    <title>Rhyno Logistics | Parcel Delivery</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-page="parcels">
+    <div id="site-header"></div>
+    <main>
+      <section class="page-hero"><div class="container"><p class="eyebrow"><span></span> RHYNO LOGISTICS</p><h1>Send parcels with confidence.</h1><p>Arrange collection and delivery with a clear request tailored to your parcel.</p></div></section>
+      <section class="parcel-booking section" id="parcel-booking">
+        <div class="container">
+          <div class="booking-access-notice" id="booking-access-notice" hidden role="status"><p id="booking-access-message">Create an account or sign in before submitting a booking request.</p><a href="portal.html#auth-section">Create account or sign in <span aria-hidden="true">→</span></a></div>
+          <div class="section-heading"><div><p class="eyebrow orange"><span></span> PARCEL DELIVERY</p><h2>Send a parcel with confidence.</h2></div><p>Share your collection, delivery, and parcel details. We will arrange the right service for your shipment.</p></div>
+          <form class="parcel-form" id="parcel-form" data-account-required>
+            <fieldset><legend>Sender information</legend><div class="parcel-fields"><label>Full name<input id="sender-name" required type="text" placeholder="Sender's full name" /></label><label>Phone number<input id="sender-phone" required type="tel" placeholder="+233 00 000 0000" /></label><label>Email address<input id="sender-email" required type="email" placeholder="sender@example.com" /></label><label>Country<select id="sender-country" required data-country-select data-placeholder="Select sender country"><option value="">Loading countries…</option></select></label><label>Pickup location<input id="pickup-location" required type="text" placeholder="City or area" /></label><label class="wide-field">Pickup address<textarea id="pickup-address" required placeholder="Street, building, and any collection notes"></textarea></label></div></fieldset>
+            <fieldset><legend>Recipient information</legend><div class="parcel-fields"><label>Full name<input id="recipient-name" required type="text" placeholder="Recipient's full name" /></label><label>Phone number<input id="recipient-phone" required type="tel" placeholder="+000 00 000 0000" /></label><label>Email address<input id="recipient-email" required type="email" placeholder="recipient@example.com" /></label><label>Destination country<select id="destination-country" required data-country-select data-placeholder="Select destination country"><option value="">Loading countries…</option></select></label><label class="wide-field">Delivery address<textarea id="delivery-address" required placeholder="Street, building, city, and postal code"></textarea></label></div></fieldset>
+            <fieldset><legend>Parcel information</legend><div class="parcel-fields"><label class="wide-field">Parcel description<input id="parcel-description" required type="text" placeholder="What are you sending?" /></label><label>Parcel category<select id="parcel-category"><option>Documents</option><option>Personal items</option><option>Retail goods</option><option>Electronics</option><option>Other</option></select></label><label>Weight (kg)<input id="parcel-weight" required min="0.1" step="0.1" type="number" placeholder="0.0" /></label><label>Dimensions (cm)<input id="parcel-dimensions" required type="text" placeholder="L × W × H" /></label><label>Quantity<input id="parcel-quantity" required min="1" value="1" type="number" /></label><label>Delivery type<select id="delivery-type"><option value="standard">Standard delivery</option><option value="express">Express delivery</option><option value="international">International delivery</option><option value="domestic">Domestic delivery</option></select></label><label class="wide-field">Special instructions<textarea id="parcel-instructions" placeholder="Fragile handling, pickup timing, or other notes"></textarea></label></div></fieldset>
+            <fieldset class="delivery-options"><legend>Choose a delivery option</legend><label><input name="delivery-option" type="radio" value="standard" checked /><span><strong>Standard delivery</strong><small>Reliable service with a practical timeline</small></span></label><label><input name="delivery-option" type="radio" value="express" /><span><strong>Express delivery</strong><small>Priority handling for urgent parcels</small></span></label><label><input name="delivery-option" type="radio" value="international" /><span><strong>International delivery</strong><small>Cross-border delivery with customs support</small></span></label><label><input name="delivery-option" type="radio" value="domestic" /><span><strong>Domestic delivery</strong><small>Fast delivery within your country</small></span></label></fieldset>
+            <button class="primary-button" type="submit" disabled>Submit Parcel Request <span aria-hidden="true">→</span></button>
+          </form>
+          <section class="parcel-confirmation" id="parcel-confirmation" hidden aria-live="polite"></section>
+          <section class="quotation-status parcel-status"><div><p class="eyebrow orange"><span></span> REQUEST STATUS</p><h3>Look up a parcel request.</h3><p>Use your server-generated reference and the email address submitted with the request.</p></div><form id="parcel-lookup-form"><label>Request reference<input id="parcel-reference-input" required type="text" placeholder="e.g. RHY-SHP-AB12CD34" /></label><label>Email used for request<input id="parcel-email-input" required type="email" placeholder="sender@example.com" /></label><button class="dark-button" type="submit">Check Status</button></form><p id="parcel-status-result" aria-live="polite"></p></section>
+        </div>
+      </section>
+    </main>
+    <div id="site-footer"></div>
+    <script src="js/site-shell.js"></script>
+    <script src="js/location-options.js"></script>
+    <script src="js/booking-access.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
